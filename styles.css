@@ -133,3 +133,20 @@ body.modo-oscuro .tarjeta-proyecto{
     background-color: var(--color-texto);
     color: var(--color-fondo);
 }
+
+.seccion-sobre-mi {
+    padding: 60px 10%;
+    background-color: var(--color-fondo);
+    text-align: center;
+}
+
+.contenido-perfil {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: var(--color-texto);
+}
+
+.contenido-perfil strong {
+    color: var(--color-principal);
+}
