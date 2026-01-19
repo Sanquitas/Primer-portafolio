@@ -171,11 +171,12 @@ body.modo-oscuro .tarjeta-proyecto{
 }
 
 .tarjeta {
-    background-color: white;
+    background-color: var(--color-fondo);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     border: 1px solid #eee;
+    color: var(--color-texto);
     opacity: 0; 
     transform: translateY(30px); 
     transition: opacity 0.6s, transform 0.6s, box-shadow 0.3s; 
@@ -202,4 +203,73 @@ body.modo-oscuro .tarjeta-proyecto{
     margin-top: 15px;
     margin-right: 5px;
     font-weight: bold;
+}
+
+.pie-pagina {
+    background-color: var(--color-oscuro, #2c3e50);
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contenido-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 25px;
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+.redes-sociales a:hover {
+    color: var(--color-principal);
+    border-bottom: 1px solid var(--color-principal);
+}
+
+
+body.modo-oscuro .pie-pagina {
+    background-color: #000000;
+    border-top: 1px solid #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.seccion-contacto {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input, .formulario textarea {
+    background-color: var(--color-fondo);
+    color: var(--color-texto); 
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body.modo-oscuro .formulario input, 
+body.modo-oscuro .formulario textarea {
+    border-color: #444;
 }
